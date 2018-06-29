@@ -24,7 +24,14 @@
 
   &__content {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+  }
+
+  &__title {
+    font-weight: normal;
+    font-size: 14px;
+    max-width: 290px;
   }
 }
 
@@ -64,6 +71,12 @@
 }
 
 .main-menu {    
+  
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
   ul {
     list-style: none;
     display: flex;
@@ -73,7 +86,7 @@
   }
 
   li {
-    margin-right: 28px;
+    margin-right: 35px;
     
     &.last {
       margin-right: 0;
@@ -85,11 +98,12 @@
     line-height: 1.5;
     text-decoration: none;
     font-weight: normal;
-    border-bottom: 2px solid transparent;
+    border-bottom: 1px solid transparent;
 
     &.link {
       &:hover, &.active {
-        border-bottom: 2px solid $accent;
+        color: $accent;
+        border-bottom: 1px solid $accent;
       }
     }
   }
@@ -116,7 +130,7 @@
 .s {
   &-main {
     padding-top: 150px;
-    background-image: url('../img/main-back.jpg');
+    background-image: url("../img/main-back.png");
 
     &-title {
       font-size: 39px;

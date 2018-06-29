@@ -14,7 +14,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <meta property="og:image" content="path/to/image.jpg">
-  <link rel="shortcut icon" href="img/favicon.ico?v=10" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon.ico?v=12" type="image/x-icon">
   <link rel="stylesheet" href="./css/libs.min.css">
   <link rel="stylesheet" href="./css/main.min.css">
 </head>
@@ -24,26 +24,36 @@
   <div class="page-wrapper">
 
     <div class="page-top"><i class="fa fa-angle-double-up"></i></div>
-    <a href="tel:+" id="callMe" class="call-me"><i class="fa fa-phone"></i></a>
+    <a href="tel:+77017429347" id="callMe" class="call-me"><i class="fa fa-phone"></i></a>
 
     <header class="header">
       <div class="container">
-        <div class="header__content">
+        <div class="header__content">          
+          <h3 class="header__title">
+            Уникальные фруктово-ореховые 
+            батончики казахстанского производства
+          </h3>
+
+          <div class="header__address">
+            Ваш город   
+            <a href="">Доставка и оплата</a>
+          </div>          
+
           <a href="/" class="logo">
             <img src="./img/logo.png" alt="">
           </a>
 
-          <h3 class="header__title">
-          </h3>
-
-          <div class="grow"></div>
-
-          <div class="header__phone d-none d-lg-block">
-            <a href="tel:+" class="text-phone" id="phone_number">+ 7 (727) 317- 01-64</a>
-            <a href="tel:+" class="text-phone" id="phone_number">+ 7 (778) 997-26-30</a>
+          <div class="header__grafik">
+            Время работы: <br>
+            Пн.-пт: 09:00 - 18:00
           </div>
 
-          <a href="#" class="button d-none d-sm-block" data-remodal-target="zvonok-modal">Заказать звонок</a>
+          <div class="header__phone d-none d-lg-block">
+            <a href="tel:+77273468799" class="text-phone" id="phone_number">+7 (727) 346 87 99</a>
+            <a href="tel:+77017429347" class="text-phone" id="phone_number">+7 701 742 93 47</a>
+          </div>
+
+          <a href="#" class="button d-none d-sm-block" data-remodal-target="zvonok-modal">Заказать обратный звонок</a>
 
           <button class="hamburger hamburger--elastic hamburger--accessible">
             <span class="hamburger-box">
@@ -54,23 +64,45 @@
 
         <nav class="main-menu">
           <div class="container">
-            <ul>
-              <li>
-                <a class="link" href="#main">Главная</a>
-              </li>
-              <li>
-                <a class="link" href="#service">Услуги</a>
-              </li>
-              <li class="last">
-                <a class="link" href="#contact">Контакты</a>
-              </li>
-              <li class="d-lg-none">
-                <a href="tel:+" class="text-phone" id="phone_number">+ 7 (727) 317- 01-64</a>
-              </li>
-              <li class="d-lg-none">
-                <a href="tel:+" class="text-phone" id="phone_number">+ 7 (778) 997-26-30</a>
-              </li>
-            </ul>
+            <div class="main-menu__content">
+              <ul class="main-menu__left">
+                <li>
+                  <a class="link" href="#main">Главная</a>
+                </li>
+                <li>
+                  <a class="link" href="#">Наборы</a>
+                </li>
+                <li>
+                  <a class="link" href="#">Отзывы</a>
+                </li>
+                <li>
+                  <a class="link" href="#">Где купить </a>
+                </li>
+                <li>
+                    <a class="link" href="#contact">Контакты</a>
+                </li>
+              </ul>
+              <ul class="main-menu__right">              
+                <li>
+                  <a class="link" href="#">Батончики</a>
+                </li>
+                <li>
+                  <a class="link" href="#">Сотрудничество</a>
+                </li>
+                <li>
+                  <a class="link" href="#">Акции</a>
+                </li>
+                <li class="last">
+                  <a class="link basket" href="#contact">Корзина</a>
+                </li>
+                <li class="d-lg-none">
+                  <a href="tel:+77273468799" class="text-phone" id="phone_number">+7 (727) 346 87 99</a>
+                </li>
+                <li class="d-lg-none">
+                  <a href="tel:+77017429347" class="text-phone" id="phone_number">+7 701 742 93 47</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
       </div>
@@ -78,9 +110,44 @@
 
     <section class="section s-main" id="main">
       <div class="container">
-        <h1 class="s-main__title"></h1>
+        <div class="row">
+          <div class="col col-md-6">
+            <h1 class="s-main__title">Фруктово-ореховый батончик Bio Elite</h1>
+            <div class="s-main__text">Тот самый перекус, 
+                который не даст поправиться</div>
+            <div class="main">
+              <div class="main__title">Собери свой набор батончиков "Bio Elite"!</div>
+              <button class="button">Собрать свой набор батончиков</button>
+            </div>
+          </div>
+          <div class="col col-md-6">
+
+            <div class="form form--horizontal wow slideInUp">
+              <form action="/mail.php" method="post">
+                <div class="form__title">Или укажите контактные данные, и наш менеджер свяжется с Вами!</div>
+                <div class="form__content">
+    
+                  <input type="hidden" name="info" value="Или укажите контактные данные, и наш менеджер свяжется с Вами!">
+    
+                  <div class="input-div">
+                    <input type="text" class="input" name="name" placeholder="Имя">
+                  </div>
+    
+                  <div class="input-div">
+                    <input type="tel" class="input" name="phone" placeholder="Номер телефона *" required="">
+                    <span class="error-message">Заполните это поле</span>
+                  </div>
+    
+                  <button class="button ajax-submit" type="submit" id="zakazat_obratnyi_zvonok">Заказать обратный звонок</button>
+                </div>
+                <div class="form__info">*Гарантируем 100% сохранность Ваших данных</div>
+              </form>
+            </div>
+          </div>
+        </div>
         
-        <div class="form form--vertical wow slideInLeft">
+        
+        <!-- <div class="form form--vertical wow slideInLeft">
           <form action="/mail.php" method="post">
             <div class="form__title">Собираетесь в путешествие, но не знаете как и с чего начать? Доверьтесь нам и сэкономьте!</div>
             <div class="form__content">
@@ -100,7 +167,7 @@
               <div class="form__info">*Гарантируем 100% сохранность Ваших данных</div>
             </div>
           </form>
-        </div>
+        </div> -->
 
       </div>
     </section>
