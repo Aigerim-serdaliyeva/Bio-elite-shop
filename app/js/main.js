@@ -160,6 +160,69 @@ $(document).ready(function () {
     }
   });
 
+  $(".tab__link").click(function() {
+    var $tab = $(this).closest(".tab");
+    var id = $(this).data("id");
+
+    $tab.find(".tab__link").removeClass("active");
+    $(this).addClass("active")
+    $tab.find(".tab__content").removeClass("active").filter("#" + id).addClass("active");
+  });
+
+  $(".dropdown-item").click(function(e) {
+    e.preventDefault();
+    var $dropdown = $(this).closest(".dropdown");
+    $dropdown.find(".dropdown-toggle span").html($(this).html());
+  })
+
+  $(".carousel-reviews").owlCarousel({
+    loop: true,
+    dots: true,
+    nav: false,
+    smartSpeed: 500,
+    margin: 30,
+    navText: ['', ''],
+    responsive: {
+      0: { items: 1, mouseDrag: false },
+      1200: { items: 2, mouseDrag: true },
+    },
+  });
+
+  $(".carousel-eto").owlCarousel({
+    loop: true,
+    dots: true,
+    nav: false,
+    items: 1,
+    mouseDrag: false,
+    smartSpeed: 500,
+    margin: 30,
+    navText: ['', '']
+  });
+
+  $(".carousel-to4ka").owlCarousel({
+    loop: true,
+    dots: true,
+    nav: false,
+    items: 1,
+    mouseDrag: false,
+    smartSpeed: 500,
+    margin: 30,
+    navText: ['', '']
+  });
+
+  $(".carousel-naboryi").owlCarousel({
+    loop: true,
+    dots: true,
+    nav: false,
+    smartSpeed: 500,
+    margin: 10,
+    navText: ['', ''],
+    responsive: {
+      0: { items: 1, mouseDrag: false },
+      992: { items: 2, mouseDrag: true },
+    },
+  });
+
 
   $(".carousel-certificates").owlCarousel({
     loop: true,
@@ -168,7 +231,22 @@ $(document).ready(function () {
     navText: ['', ''],
     responsive: {
       0: { items: 1, mouseDrag: false, dots: true, nav: false },
-      480: { items: 2, mouseDrag: true, dots: false, nav: true },
+      576: { items: 2, mouseDrag: true, dots: false, nav: true },
+    },
+  });
+
+  $(".carousel-partners").owlCarousel({
+    loop: true,
+    dots: true,
+    nav: false,
+    smartSpeed: 500,
+    margin: 10,
+    navText: ['', ''],
+    responsive: {
+      0: { items: 1, mouseDrag: false },
+      576: { items: 2, mouseDrag: true },
+      992: { items: 3 },
+      1200: { items: 4 }
     },
   });
 

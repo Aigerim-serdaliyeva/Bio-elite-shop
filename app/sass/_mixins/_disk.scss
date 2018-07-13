@@ -1,0 +1,5 @@
+@mixin disk($width) {
+	width: $width;
+  height: $width;
+	border-radius: 50%;
+}

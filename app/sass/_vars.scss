@@ -1,13 +1,16 @@
 @import './fonts';
 @import './_mixins/circle';
+@import './_mixins/disk';
 
-$default_family: MinionPro, Arial;
-$title_family: MinionPro, Arial;
+$default_family: SegoeUI, Arial;
+$title_family: Exo2, Arial;
+$print_family: SegoePrint, Arial;
+
 $font_size: 14px;
-$title_color: #000;
 $text_color: #000;
 
 $accent: #52006b;
+$yellow: #fcce30;
 
 // Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
 $grid-gutter-width: 30px;

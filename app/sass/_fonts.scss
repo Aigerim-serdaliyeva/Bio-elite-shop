@@ -1,2 +1,13 @@
 @import "_mixins/font-face";
 
+@include font-face("SegoePrint", "../fonts/SegoePrint/SegoePrintRegular/SegoePrintRegular", normal);
+@include font-face("SegoePrint", "../fonts/SegoePrint/SegoePrintBold/SegoePrintBold", bold);
+
+@include font-face("SegoeUI", "../fonts/SegoeUI/SegoeUIRegular/SegoeUIRegular", normal);
+@include font-face("SegoeUI", "../fonts/SegoeUI/SegoeUISemiBold/SegoeUISemiBold", 600);
+@include font-face("SegoeUI", "../fonts/SegoeUI/SegoeUIBold/SegoeUIBold", bold);
+
+@include font-face("Exo2", "../fonts/Exo2/Exo2Regular/Exo2Regular", normal);
+@include font-face("Exo2", "../fonts/Exo2/Exo2Medium/Exo2Medium", 500);
+@include font-face("Exo2", "../fonts/Exo2/Exo2Bold/Exo2Bold", bold);
+
