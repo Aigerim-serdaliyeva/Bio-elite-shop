@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
 
-  <title>Страница благодарности</title>
+  <title>Главная страница</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
-<body id="thanks-page">
+<body id="partner-page">
 
   <div class="page-wrapper">
 
@@ -122,14 +122,98 @@
       </div>
     </header>
 
-    <section class="section section--grow s-thanks">
+    <section class="section s-partner-main">
       <div class="container">
-        <div class="s-thanks__content">
-          <div class="s-thanks__title">Поздравляем!</div>
-          <div class="s-thanks__text">Ваша заявка успешно принята. <br>
-            В ближайшее время наш менеджер свяжется с Вами!</div>
-          <a href="/" class="underline accent">Вернуться на главную</a> 
-        </div> 
+        <div class="row">
+          <div class="col-lg-8 col-md-7">
+            <h1 class="s-partner-main__title">Закупите батончики "Bio Elite" по оптовым ценам сегодня, и увеличьте 
+                поток довольных покупателей в своем бизнесе в 2 раза уже завтра!</h1>
+
+              <div class="nabor nabor--accent">
+                <div class="nabor__image"><img src="./img/nabor-1.png" alt=""></div>
+              </div>
+          </div>
+
+          <div class="col">
+            <div class="form form--vertical wow zoomIn">
+              <form action="/mail.php" method="post">
+                <div class="form__title">Запросите каталог батончиков сейчас и получите 
+                    индивидуальную скидку для Вашего бизнеса!</div>
+                <div class="form__content">   
+                  <input type="hidden" name="info" value="Запросите каталог батончиков сейчас и получите индивидуальную скидку для Вашего бизнеса!">
+    
+                  <div class="input-div">
+                    <input type="text" class="input" name="name" placeholder="Имя">
+                  </div>
+
+                  <div class="input-div">
+                    <input type="email" class="input" name="email" placeholder="E-mail *" required="">
+                    <span class="error-message">Заполните это поле</span>
+                  </div>
+      
+                  <div class="input-div">
+                    <input type="tel" class="input" name="phone" placeholder="Номер телефона *" required="">
+                    <span class="error-message">Заполните это поле</span>
+                  </div>
+    
+                  <button class="button ajax-submit" type="submit" id="zakazat_obratnyi_zvonok">Заказать обратный звонок</button>
+                </div>
+                <div class="form__info">*Гарантируем 100% сохранность Ваших данных</div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section s-offer">
+      <div class="container">
+        <div class="section-title">Мы предоставляем</div>
+
+        <div class="s-offer__content wow fadeInUp">
+          <div class="offer">
+            <img src="./img/offer-1.png" alt="">
+            <div class="offer__title">Гибкие цены</div>
+          </div>
+          <div class="offer">
+            <img src="./img/offer-2.png" alt="">
+            <div class="offer__title">Индивидуальные скидки</div>
+          </div>
+          <div class="w-100"></div>
+          <div class="offer">
+            <img src="./img/offer-3.png" alt="">
+            <div class="offer__title">Удобные способы доставки</div>
+          </div>
+          <div class="offer">
+            <img src="./img/offer-4.png" alt="">
+            <div class="offer__title">Маркетинговое продвижение 
+                бренда по всему Казахстану</div>
+          </div>
+          <div class="offer">
+            <img src="./img/offer-5.png" alt="">
+            <div class="offer__title">Брендированные коробки 
+                для продаж</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section s-partners">
+      <div class="container">
+        <div class="section-title">С нами уже сотрудничают:</div>
+
+        <div class="owl-carousel carousel-partners wow fadeInUp">
+          <img src="./img/partner-1.png" alt="">
+          <img src="./img/partner-2.png" alt="">
+          <img src="./img/partner-3.png" alt="">
+          <img src="./img/partner-4.png" alt="">
+          <img src="./img/partner-5.png" alt="">
+          <img src="./img/partner-6.png" alt="">
+          <img src="./img/partner-7.png" alt="">
+          <img src="./img/partner-8.png" alt="">
+        </div>
+        
+        <a href="/" class="underline accent">Вернуться на главную</a>
       </div>
     </section>
 
