@@ -234,6 +234,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $title_family;
   font-weight: normal;
   line-height: 1;
+  letter-spacing: -1px;
   text-align: center;
   border-radius: 3px;
   background-color:$accent;
@@ -353,6 +354,14 @@ h1, h2, h3, h4, h5, h6 {
   &__title {
     font-size: 18px;
     margin-bottom: 10px;
+
+    &--large {
+      font-size: 24px;
+      font-weight: 500;
+      font-family: $title_family;
+      margin-bottom: 20px;
+      text-align: center;
+    }
   }
 
   .input-div, .button {
@@ -362,7 +371,7 @@ h1, h2, h3, h4, h5, h6 {
   &__info {
     font-size: 12px;
     font-family: $title_family;
-    text-align: left;
+    // text-align: left;
     letter-spacing: 0;
   }
 
@@ -371,8 +380,6 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
 
     .form {
-      &__content, &__info {
-      }
 
       &__content {
         display: flex;
@@ -388,6 +395,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   &--vertical {
+    text-align: center;
     
     .form {
       &__content {
@@ -478,8 +486,15 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
 
+  &__logo {
+    position: absolute;
+    top: 10px;
+    left: 35px;
+  }
+
+
   &__title {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
     font-family: $title_family;
     color: $accent;
@@ -491,5 +506,9 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 375px;
     padding: 40px 25px;
     background-image: url('../img/zvonok-back.jpg');
+
+    .remodal__title {
+      font-size: 18px;
+    }
   }
 }

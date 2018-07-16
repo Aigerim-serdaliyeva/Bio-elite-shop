@@ -102,14 +102,6 @@
       }
     }
   }
-
-  .s-to4ka {
-    .to4ki {
-    }
-    .tab {
-      
-    }
-  }
 }
 
 // ≥992px
@@ -182,24 +174,24 @@
     .tab {
       display: block;
 
-      &__links {
-        display: none;
-      }
-
       &__contents {
         border-radius: 5px;
         flex-grow: 0;
       }
     }
-  }
-
-  
+  }  
 }
 
 // ≥768px
 @include media-breakpoint-down(sm) {  
 
   .form {
+    &__title {
+      &--large {
+        font-size: 18px;
+      }
+    }
+
     &--horizontal {
       .form {
         &__content {
@@ -279,16 +271,6 @@
     }
   }
 
-  .s-offer {
-    &__content {
-      margin-left: -5px;
-      margin-right: -5px;
-    }
-    .offer {
-      width: calc(50% - 20px);
-      margin: 0 5px 30px;
-    }
-  }
 }
 
 // ≥576px
@@ -300,6 +282,10 @@
   .remodal {
     padding-left: 15px;
     padding-right: 15px;
+
+    &__logo {
+      left: 15px;
+    }
   }
 
   .nabor {
@@ -397,16 +383,41 @@
     }
   }
 
-  .s-thanks {
-    padding: 150px 0 50px;
-    
-    &-title {
-      font-size: 30px;
+  .nabor-modal {
+    padding-top: 60px;
+
+    .nabor {
+      &__content {
+        margin-left: 0;
+      }
+
+      &__title {
+        margin: 0 0 10px;
+      }
     }
 
-    &-text {
-      font-size: 16px;
-      margin-bottom: 40px;
+    &__bottom {
+      flex-direction: column;
+      p {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .address-modal {
+    .remodal__title {
+      text-align: center;
+      font-size: 18px;
+      
+      img {
+        display: block;
+        margin: 0 auto 10px;
+      }
+    }
+
+    &__bottom {
+      margin-left: -15px;
+      margin-right: -15px;
     }
   }
 }

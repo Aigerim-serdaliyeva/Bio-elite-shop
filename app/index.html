@@ -86,26 +86,26 @@
                 <a class="link" href="#main">Главная</a>
               </li>
               <li>
-                <a class="link" href="#">Наборы</a>
+                <a class="link" href="#nabors">Наборы</a>
               </li>
               <li>
-                <a class="link" href="#">Отзывы</a>
+                <a class="link" href="#reviews">Отзывы</a>
               </li>
               <li>
-                <a class="link" href="#">Где купить </a>
+                <a class="link" href="#places">Где купить </a>
               </li>
               <li>
                   <a class="link" href="#contact">Контакты</a>
               </li>
               <li class="grow"></li>
               <li>
-                <a class="link accent" href="#">Батончики</a>
+                <a class="link accent" href="/category.html">Батончики</a>
               </li>
               <li>
-                <a class="link accent" href="#">Сотрудничество</a>
+                <a class="link accent" href="/partner.html">Сотрудничество</a>
               </li>
               <li>
-                <a class="link accent" href="#">Акции</a>
+                <a class="link accent" href="/sale.html">Акции</a>
               </li>
               <li class="last d-none d-lg-block">
                 <a class="link basket" href="#">Корзина</a>
@@ -149,7 +149,7 @@
               </div>
             </div>
 
-            <div class="form form--horizontal wow slideInUp">
+            <div class="form form--horizontal wow fadeIn">
               <form action="/mail.php" method="post">
                 <div class="form__title">Или укажите контактные данные, и наш менеджер свяжется с Вами!</div>
                 <div class="form__content">
@@ -177,7 +177,7 @@
 
     <section class="section s-advantages">
       <div class="container">
-        <div class="s-advantages__content">
+        <div class="s-advantages__content wow zoomIn">
           <img src="./img/advantages.png" alt="" class="s-advantages__image">
 
           <ul class="s-advantages__list">
@@ -203,7 +203,7 @@
         <h2 class="section-title">Наборы батончиков "Bio Elite"</h2>
 
         <div class="owl-carousel carousel-naboryi">
-          <div class="nabor">
+          <div class="nabor wow zoomIn">
             <div class="nabor__image"><img src="./img/nabor-1.png" alt=""></div>
             <div class="nabor__content">
               <h3 class="nabor__title">Макси-набор батончиков "Bio Elite"</h3>
@@ -216,12 +216,12 @@
               </div>            
 
               <div class="nabor__price"> 8 400тг. <span>вместо <del>9360</del></span></div>
-              <a href="#" class="nabor__link accent underline">Что входит в набор?</a>
+              <a href="#" class="nabor__link accent underline" data-remodal-target="nabor-modal-1">Что входит в набор?</a>
               <button class="button">Купить</button>
             </div>
           </div>
 
-          <div class="nabor">
+          <div class="nabor wow zoomIn">
             <div class="nabor__image"><img src="./img/nabor-2.png" alt=""></div>
             <div class="nabor__content">
               <h3 class="nabor__title">Мини-набор батончиков "Bio Elite"</h3>
@@ -234,7 +234,7 @@
               </div>
               
               <div class="nabor__price">2 340 тг.</div>
-              <a href="#" class="nabor__link accent underline">Что входит в набор?</a>
+              <a href="#" class="nabor__link accent underline" data-remodal-target="nabor-modal-2">Что входит в набор?</a>
               <button class="button">Купить</button>
             </div>
           </div>
@@ -257,7 +257,7 @@
       <div class="container">
         <h2 class="section-title">Батончики "Bio Elite" - это:</h2>
 
-        <div class="row justify-content-center d-none d-sm-flex">
+        <div class="row justify-content-center d-none d-sm-flex wow fadeInUp">
           <div class="col-lg-3 col-md-4 col-sm-6 d-flex">
             <div class="eto">
               <img src="./img/eto-1.png" alt="" class="eto__ramka">
@@ -367,7 +367,7 @@
       <div class="container">
         <h2 class="section-title">Отзывы поклонников батончиков "Bio Elite"</h2>
 
-        <div class="owl-carousel carousel-reviews">
+        <div class="owl-carousel carousel-reviews wow fadeInUp">
           <div class="review">
             <div class="review__image">
               <div class="review__img"><img src="./img/review-1.jpg" alt=""></div>
@@ -416,7 +416,7 @@
         <h2 class="section-title">Приобретайте батончики "Bio Elite" в розничных точках:</h2>
 
         <div class="tab">
-          <div class="dropdown">
+          <div class="dropdown d-lg-none">
             <div class="dropdown-toggle" id="tabDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <span>г. Алматы <br>
                 и Алматинская область</span>
@@ -428,39 +428,40 @@
             </div>
           </div> 
 
-          <div class="tab__links">
+          <div class="tab__links d-none d-lg-block">
             <div class="tab__link active" data-id="tab1">г. Алматы <br>
               и Алматинская область</div>
             <div class="tab__link" data-id="tab2">г. Астана</div>
           </div>
+
           <div class="tab__contents">
             <div class="tab__content active" id="tab1">
               <div class="to4ki d-none d-sm-flex">
                 <div class="to4ka">
                   <img src="./img/to4ka-1.png" alt="">
                   <div class="to4ka__title">Магазины и супермаркеты</div>
-                  <button class="button">Посмотреть адреса</button>
+                  <button class="button" data-remodal-target="supermarket-modal">Посмотреть адреса</button>
                 </div>
                 <div class="to4ka">
                   <img src="./img/to4ka-2.png" alt="">
                   <div class="to4ka__title">Аптеки</div>
-                  <button class="button">Посмотреть адреса</button>
+                  <button class="button" data-remodal-target="apteka-modal">Посмотреть адреса</button>
                 </div>
                 <div class="to4ka">
                   <img src="./img/to4ka-3.png" alt="">
                   <div class="to4ka__title">Кофейни и столовые</div>
-                  <button class="button">Посмотреть адреса</button>
+                  <button class="button" data-remodal-target="cafe-modal">Посмотреть адреса</button>
                 </div>
                 <div class="to4ka">
                   <img src="./img/to4ka-4.png" alt="">
                   <div class="to4ka__title">Фитнес-клубы <br>
                       и салоны красоты</div>
-                  <button class="button">Посмотреть адреса</button>
+                  <button class="button" data-remodal-target="club-modal">Посмотреть адреса</button>
                 </div>
                 <div class="to4ka">
                   <img src="./img/to4ka-5.png" alt="">
                   <div class="to4ka__title">Автозаправки</div>
-                  <button class="button">Посмотреть адреса</button>
+                  <button class="button" data-remodal-target="zapravka-modal">Посмотреть адреса</button>
                 </div>
               </div>
 
@@ -558,7 +559,7 @@
       <div class="container">
         <h2 class="section-title">Контакты</h2>
 
-        <div class="row align-items-end">
+        <div class="row align-items-end wow fadeInUp">
           <div class="col-lg-6">
             <div class="contact contact--margin">
               <div class="contact__title">Телефоны:</div>
@@ -667,12 +668,395 @@
           </div>
 
           <button class="button ajax-submit" type="submit" id="zakazat_zvonok">Заказать обратный звонок</button>
-
-          <div class="form__info">*Гарантируем 100% сохранность Ваших данных</div>
         </div>
+        <div class="form__info">*Гарантируем 100% сохранность Ваших данных</div>
       </form>
     </div>
   </div>
+
+  <div class="remodal nabor-modal" data-remodal-id="nabor-modal-1" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <img src="./img/logo-mini.png" alt="" class="remodal__logo">
+
+    <div class="nabor nabor--large">
+      <div class="nabor__image nabor__image--mini"><img src="./img/nabor-1.png" alt=""></div>
+      <div class="nabor__content">
+        <h3 class="nabor__title">Макси-набор батончиков "Bio Elite"</h3>
+        <div class="nabor__count">Количество: 24 батончика</div>
+
+        <div class="counter">
+          <div class="counter__descrease">-</div>
+          <input type="number" value="1">
+          <div class="counter__increase">+</div>
+        </div>            
+
+        <div class="nabor__price"> 8 400тг. <span>вместо <del>9360</del></span></div>
+        <button class="button">Купить</button>
+      </div>
+    </div>
+
+    <ul class="list">
+      <li>4 фруктово-ореховых батончиков со вкусом "ИНЖИР-АРАХИС"</li>
+      <li>4 фруктово-ореховых батончиков со вкусом "ШОКОЛАД-МИНДАЛЬ"</li>
+      <li>4 фруктово-ореховых батончиков со вкусом "КЛЮКВА-ИЗЮМ"</li>
+      <li>4 фруктово-ореховых батончиков со вкусом "АПЕЛЬСИН"</li>
+      <li>4 фруктово-ореховых батончиков со вкусом "КУРАГА-АРАХИС"</li>
+      <li>4 фруктово-ореховых батончиков со вкусом "ЯБЛОКО-КОРИЦА" </li>
+    </ul>
+
+    <div class="nabor-modal__bottom">
+      <p>Собери свой набор батончиков "Bio Elite"!</p>
+      <button class="button">Собрать свой набор батончиков</button>
+    </div>
+
+  </div>
+
+  <div class="remodal nabor-modal" data-remodal-id="nabor-modal-2" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <img src="./img/logo-mini.png" alt="" class="remodal__logo">
+
+    <div class="nabor nabor--large">
+      <div class="nabor__image nabor__image--mini"><img src="./img/nabor-2.png" alt=""></div>
+      <div class="nabor__content">
+        <h3 class="nabor__title">Мини-набор батончиков "Bio Elite"</h3>
+        <div class="nabor__count">Количество: 6 батончика</div>
+
+        <div class="counter">
+          <div class="counter__descrease">-</div>
+          <input type="number" value="1">
+          <div class="counter__increase">+</div>
+        </div>            
+
+        <div class="nabor__price"> 2 340тг.</div>
+        <button class="button">Купить</button>
+      </div>
+    </div>
+
+    <ul class="list">
+      <li>1 фруктово-ореховых батончиков со вкусом "ИНЖИР-АРАХИС"</li>
+      <li>1 фруктово-ореховых батончиков со вкусом "ШОКОЛАД-МИНДАЛЬ"</li>
+      <li>1 фруктово-ореховых батончиков со вкусом "КЛЮКВА-ИЗЮМ"</li>
+      <li>1 фруктово-ореховых батончиков со вкусом "АПЕЛЬСИН"</li>
+      <li>1 фруктово-ореховых батончиков со вкусом "КУРАГА-АРАХИС"</li>
+      <li>1 фруктово-ореховых батончиков со вкусом "ЯБЛОКО-КОРИЦА" </li>
+    </ul>
+
+    <div class="nabor-modal__bottom">
+      <p>Собери свой набор батончиков "Bio Elite"!</p>
+      <button class="button">Собрать свой набор батончиков</button>
+    </div>
+
+  </div>
+
+  <div class="remodal address-modal" data-remodal-id="supermarket-modal" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+
+    <div class="remodal__title"><img src="./img/to4ka-1.png" alt=""> Магазины и супермаркеты</div>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="address">TOO "BioGrourmet.kz" <br>
+            мкр.Мирас,128</div>
+        <div class="address">ТОО Минимаркет "Любимый" <br>
+            ул.Кабанбай   батыра,199А,пом 1</div>
+        <div class="address">Магазин  Люция   <br>
+            мкр.Самал  2,д.45        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="address">"IG Food" <br>
+            ул.Желтоксан,144, строение 67        </div>
+        <div class="address">Салон ортопедического здоровья <br>
+            ул.Ауэзова,50        </div>
+        <div class="address">
+            ТЦ Люмир <br>
+            мкр.Астана,1/10, ул.Саина, уг.ул.Шаляпина
+        </div>
+      </div>
+    </div>
+
+    <div class="address-modal__bottom">
+      <div class="form__title">Есть вопросы? Закажите обратный звонок, и наш менеджер свяжется с Вами!</div>
+
+      <div class="form form--horizontal">
+        <form action="/mail.php" method="post">
+          <div class="form__content">
+            <input type="hidden" name="info" value="Есть вопросы? Закажите обратный звонок, и наш менеджер свяжется с Вами!">
+  
+            <div class="input-div">
+              <input type="text" class="input" name="name" placeholder="Имя">
+            </div>
+  
+            <div class="input-div">
+              <input type="tel" class="input" name="phone" placeholder="Номер телефона *" required="">
+              <span class="error-message">Заполните это поле</span>
+            </div>
+  
+            <button class="button ajax-submit" type="submit" id="zakazat_obratnyi_zvonok">Заказать обратный звонок</button>
+          </div>
+          <div class="form__info">*Гарантируем 100% сохранность Ваших данных</div>
+        </form>
+      </div>    
+    </div>
+
+  </div>
+
+  <div class="remodal address-modal" data-remodal-id="apteka-modal" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+
+    <div class="remodal__title"><img src="./img/to4ka-2.png" alt=""> Аптеки</div>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="address">"Аптека №2" <br>
+            ул.Назарбаева,91/97        </div>
+        <div class="address">Аптека ТОО "Agatai Pharm" <br>
+            ул.Сейфуллина,589а,   оф 65          </div>
+        <div class="address">Аптека плюс <br>
+            ул.Ауэзова,175</div>
+      </div>
+      <div class="col-sm-6">
+        <div class="address">Аптека новая <br>
+            мкр.Орбита 2,д.6,кв н/1        </div>
+        <div class="address">Аптека "Магазин здоровья" <br>
+            Тимирязева,53,   ул. Алмалы бак,11        </div>
+        <div class="address">
+            "Фармстор" <br>
+мкр.8, ул.Алтынсарина,8        
+        </div>
+      </div>
+    </div>
+
+    <div class="address-modal__bottom">
+      <div class="form__title">Есть вопросы? Закажите обратный звонок, и наш менеджер свяжется с Вами!</div>
+
+      <div class="form form--horizontal">
+        <form action="/mail.php" method="post">
+          <div class="form__content">
+            <input type="hidden" name="info" value="Есть вопросы? Закажите обратный звонок, и наш менеджер свяжется с Вами!">
+  
+            <div class="input-div">
+              <input type="text" class="input" name="name" placeholder="Имя">
+            </div>
+  
+            <div class="input-div">
+              <input type="tel" class="input" name="phone" placeholder="Номер телефона *" required="">
+              <span class="error-message">Заполните это поле</span>
+            </div>
+  
+            <button class="button ajax-submit" type="submit" id="zakazat_obratnyi_zvonok">Заказать обратный звонок</button>
+          </div>
+          <div class="form__info">*Гарантируем 100% сохранность Ваших данных</div>
+        </form>
+      </div>    
+    </div>
+
+  </div>
+
+  <div class="remodal address-modal" data-remodal-id="cafe-modal" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+
+    <div class="remodal__title"><img src="./img/to4ka-3.png" alt=""> Кофейни и столовые</div>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="address">
+          <h4 class="accent">Сеть баров здорового питания "Fruit Republic":</h4>
+          <ol>
+            <li>ТРЦ Mega Alma-Ata (напротив фуд-корта)<br>
+                адрес: ул.Розыбакиева,247А;</li>
+            <li>ТРЦ Dostyk Plaza <br>
+                адрес: Самал-2, 111, уг. ул. Жолдасбекова и пр. Достык;</li>
+            <li>ТРЦ Mega Park<br>
+                адрес: Макатаева 127/1 уг.ул.Сейфуллина;</li>
+            <li>ТРЦ Mega Alma-Ata (напротив DeFacto)<br>
+                адрес: ул.Розыбакиева,247А. </li>
+          </ol>
+        </div>
+
+        <div class="address">
+          <h4 class="accent">Сеть кофеин "Maronne Rosso":</h4>
+
+          <ol>
+            <li>ул.Назарбаева,149;</li>
+            <li>ТРЦ Mega Alma-Ata (на 1 этаже) <br>
+                адрес: ул.Розыбакиева,247А;</li>
+            <li>Б/ц "Baykonyr" <br>
+                адрес: пр.Абая,42;</li>
+            <li>ул.Горная,640 <br>
+                (доставка товара на ул.Назарбаева,149)</li>
+          </ol>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="address">
+          <h4 class="accent">Сеть кофеин "Coffee Original":</h4>
+
+          <ol>
+            <li>Адрес: пр. Абая,46 (стадион) ;</li>
+            <li>БЦ Нурлы-Тау, адрес: пр.Аль-Фараби,19к1Б;</li>
+            <li>ТРЦ Silk Way, адрес: ул.Толе би,71;</li>
+            <li>ТРЦ City Center, адрес: ул.Толе   би,136; </li>
+            <li>пр.Аль-Фараби,19к3/Б;</li>
+            <li>БЦ Bereket, ул. Ауэзова,14а;</li>
+            <li>ул.Байтурсынова,90Б;</li>
+            <li>мкр.Баян Аул,57а/1 (киоск);</li>
+            <li>мкр.Аксай 1,Райымбека,516  (12месяцев);</li>
+            <li>ул.Назарбаева,50.</li>
+          </ol>
+        </div>
+    
+        <div class="address">
+          <h4 class="accent">Сеть кафе здорового питания "VITAMINO BAR":</h4>
+
+          <ol>
+            <li>Алматы Арена,блок Е,1 этаж,кафе Vitamino;</li>
+            <li>Спорт комплекс "Дфитнесс" <br>
+                ул.Шаляпина,20а</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="address-modal__bottom">
+      <div class="form__title">Есть вопросы? Закажите обратный звонок, и наш менеджер свяжется с Вами!</div>
+
+      <div class="form form--horizontal">
+        <form action="/mail.php" method="post">
+          <div class="form__content">
+            <input type="hidden" name="info" value="Есть вопросы? Закажите обратный звонок, и наш менеджер свяжется с Вами!">
+  
+            <div class="input-div">
+              <input type="text" class="input" name="name" placeholder="Имя">
+            </div>
+  
+            <div class="input-div">
+              <input type="tel" class="input" name="phone" placeholder="Номер телефона *" required="">
+              <span class="error-message">Заполните это поле</span>
+            </div>
+  
+            <button class="button ajax-submit" type="submit" id="zakazat_obratnyi_zvonok">Заказать обратный звонок</button>
+          </div>
+          <div class="form__info">*Гарантируем 100% сохранность Ваших данных</div>
+        </form>
+      </div>    
+    </div>
+
+  </div>
+
+  <div class="remodal address-modal" data-remodal-id="club-modal" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+
+    <div class="remodal__title"><img src="./img/to4ka-4.png" alt=""> Фитнес-клубы и салоны красоты</div>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="address">
+          <h4 class="accent">Сеть фитнес-клубов  "Fitness Blitz":</h4>
+
+          <ol>
+            <li>мкр.Самал  1,ул.Жолдасбекова,9/2;</li>
+            <li>ул.Жарокого,124.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="address">Спорт комплекс "Дфитнесс" <br>
+            ул.Шаляпина,20а</div>
+        <div class="address">Тонус Beauty <br>
+            ул.Жарокого,124</div>
+      </div>
+    </div>
+
+    <div class="address-modal__bottom">
+      <div class="form__title">Есть вопросы? Закажите обратный звонок, и наш менеджер свяжется с Вами!</div>
+
+      <div class="form form--horizontal">
+        <form action="/mail.php" method="post">
+          <div class="form__content">
+            <input type="hidden" name="info" value="Есть вопросы? Закажите обратный звонок, и наш менеджер свяжется с Вами!">
+  
+            <div class="input-div">
+              <input type="text" class="input" name="name" placeholder="Имя">
+            </div>
+  
+            <div class="input-div">
+              <input type="tel" class="input" name="phone" placeholder="Номер телефона *" required="">
+              <span class="error-message">Заполните это поле</span>
+            </div>
+  
+            <button class="button ajax-submit" type="submit" id="zakazat_obratnyi_zvonok">Заказать обратный звонок</button>
+          </div>
+          <div class="form__info">*Гарантируем 100% сохранность Ваших данных</div>
+        </form>
+      </div>    
+    </div>
+
+  </div>
+  
+  <div class="remodal address-modal" data-remodal-id="zapravka-modal" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+
+    <div class="remodal__title"><img src="./img/to4ka-5.png" alt=""> Автозаправки</div>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="address">
+          <h4 class="accent">AZS Management (Gazenergy):</h4>
+
+          <ol>
+            <li>п.Бесагаш, А-39</li>
+            <li>Талгар,13 км,с.Туздыбастау, А-40</li>
+            <li>Алматы-Бишкек 18,2 км, А-15</li>
+            <li>Кок-Кайнар, А-38</li>
+            <li>Алматы-Бишкек 33,5 км, А-41 </li>
+          </ol>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="address">
+          <h4 class="accent">AZS Retai:</h4>
+
+          <ol>
+            <li>А-153 ТРК Максима, пр.Райымбека,251А </li>
+            <li>А-152  ул.Розыбакиева,190А</li>
+            <li>А-143  ул. Рыскулова,147(уг.ул.Саина)</li>
+            <li>А-154  мкр.Жетысу 2,86 </li>
+            <li>Северное кольцо,31/13, А-157</li>
+            <li>А-151, ул.Шемякина,121,ниже Рыскулова    </li>
+            <li>А-138, ул.Намангаиская,1 в </li>
+            <li>А-136, ул.Тимирязева,38,уг.ул.Манаса    </li>
+            <li>А-141, ул.Каблукова,89б,уг.ул.Утепова</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="address-modal__bottom">
+      <div class="form__title">Есть вопросы? Закажите обратный звонок, и наш менеджер свяжется с Вами!</div>
+
+      <div class="form form--horizontal">
+        <form action="/mail.php" method="post">
+          <div class="form__content">
+            <input type="hidden" name="info" value="Есть вопросы? Закажите обратный звонок, и наш менеджер свяжется с Вами!">
+  
+            <div class="input-div">
+              <input type="text" class="input" name="name" placeholder="Имя">
+            </div>
+  
+            <div class="input-div">
+              <input type="tel" class="input" name="phone" placeholder="Номер телефона *" required="">
+              <span class="error-message">Заполните это поле</span>
+            </div>
+  
+            <button class="button ajax-submit" type="submit" id="zakazat_obratnyi_zvonok">Заказать обратный звонок</button>
+          </div>
+          <div class="form__info">*Гарантируем 100% сохранность Ваших данных</div>
+        </form>
+      </div>    
+    </div>
+
+  </div>
+  
 
   <script src="./js/libs.min.js"></script>
   <script src="./js/main.min.js"></script>

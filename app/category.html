@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
-<body id="partner-page">
+<body id="category-page">
 
   <div class="page-wrapper">
 
@@ -122,97 +122,169 @@
       </div>
     </header>
 
-    <section class="section s-partner-main">
+    <section class="section s-category-main">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 col-md-7">
-            <h1 class="s-partner-main__title">Закупите батончики "Bio Elite" по оптовым ценам сегодня, и увеличьте 
-                поток довольных покупателей в своем бизнесе в 2 раза уже завтра!</h1>
+          <div class="col-lg-6">
+            <h1 class="s-category-main__title wow zoomIn">Собери свой набор батончиков "Bio Elite"!</h1>
 
-              <div class="nabor nabor--accent">
-                <div class="nabor__image"><img src="./img/nabor-1.png" alt=""></div>
+            <div class="s-category-main__block">
+              <img src="./img/arrow-figure.png" alt="">
+
+              <div class="s-category-main__text">
+                  * Минимальное количество батончиков для заказа - 6 шт. <br>
+                  ** При заказе от 24 батончиков предоставляется скидка в 10%! <br>
+                  ***<a href="#" class="underline accent">Доставка и оплата</a>
               </div>
+            </div>
           </div>
 
-          <div class="col">
-            <div class="form form--vertical wow zoomIn">
-              <form action="/mail.php" method="post">
-                <div class="form__title">Запросите каталог батончиков сейчас и получите 
-                    индивидуальную скидку для Вашего бизнеса!</div>
-                <div class="form__content">   
-                  <input type="hidden" name="info" value="Запросите каталог батончиков сейчас и получите индивидуальную скидку для Вашего бизнеса!">
+          <div class="col-lg-6">
+            <div class="nabor nabor--accent">
+              <div class="nabor__image"><img src="./img/nabor-1.png" alt=""></div>
+              <div class="nabor__content">
+                <h3 class="nabor__title">Макси-набор батончиков "Bio Elite"</h3>
+                <div class="nabor__count">Количество: 24 батончика</div>
     
-                  <div class="input-div">
-                    <input type="text" class="input" name="name" placeholder="Имя">
-                  </div>
+                <div class="counter">
+                  <div class="counter__descrease">-</div>
+                  <input type="number" value="1">
+                  <div class="counter__increase">+</div>
+                </div>            
+    
+                <div class="nabor__price"> 8 400тг. <span>вместо <del>9360</del></span></div>
+                <a href="#" class="nabor__link accent underline">Что входит в набор?</a>
+                <button class="button">Купить</button>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </section>
 
-                  <div class="input-div">
-                    <input type="email" class="input" name="email" placeholder="E-mail *" required="">
-                    <span class="error-message">Заполните это поле</span>
-                  </div>
-      
-                  <div class="input-div">
-                    <input type="tel" class="input" name="phone" placeholder="Номер телефона *" required="">
-                    <span class="error-message">Заполните это поле</span>
-                  </div>
-    
-                  <button class="button ajax-submit" type="submit" id="zakazat_obratnyi_zvonok">Заказать обратный звонок</button>
+    <section class="section s-categories">
+      <div class="container">
+        <div class="row wow fadeInUp">
+          <div class="col-sm-6 col-lg-4 d-flex">
+            <div class="category category--large">
+              <div class="category__image"><img src="./img/category-1.png" alt=""></div>
+              <h3 class="category__title">Батончик со вкусом "ШОКОЛАД-МИНДАЛЬ"</h3>
+              <div class="category__block">
+                <div class="category__price">390 тг.</div>
+                <div class="counter">
+                  <div class="counter__descrease">-</div>
+                  <input type="number" value="1">
+                  <div class="counter__increase">+</div>
                 </div>
-                <div class="form__info">*Гарантируем 100% сохранность Ваших данных</div>
-              </form>
+              </div>
+              <a href="/product.html" class="accent underline">Подробнее</a><button class="button">Купить</button>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 d-flex">
+            <div class="category category--large">
+              <div class="category__image"><img src="./img/category-2.png" alt=""></div>
+              <h3 class="category__title">Батончик со вкусом "КУРАГА-АРАХИС"</h3>
+              <div class="category__block">
+                <div class="category__price">390 тг.</div>
+                <div class="counter">
+                  <div class="counter__descrease">-</div>
+                  <input type="number" value="1">
+                  <div class="counter__increase">+</div>
+                </div>
+              </div>
+              <a href="/product.html" class="accent underline">Подробнее</a><button class="button">Купить</button>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 d-flex">
+            <div class="category category--large">
+              <div class="category__image"><img src="./img/category-3.png" alt=""></div>
+              <h3 class="category__title">Батончик со вкусом "ИНЖИР-АРАХИС"  </h3>
+              <div class="category__block">
+                <div class="category__price">390 тг.</div>
+                <div class="counter">
+                  <div class="counter__descrease">-</div>
+                  <input type="number" value="1">
+                  <div class="counter__increase">+</div>
+                </div>
+              </div>
+              <a href="/product.html" class="accent underline">Подробнее</a><button class="button">Купить</button>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 d-flex">
+            <div class="category category--large">
+              <div class="category__image"><img src="./img/category-4.png" alt=""></div>
+              <h3 class="category__title">Батончик со вкусом "АПЕЛЬСИН"</h3>
+              <div class="category__block">
+                <div class="category__price">390 тг.</div>
+                <div class="counter">
+                  <div class="counter__descrease">-</div>
+                  <input type="number" value="1">
+                  <div class="counter__increase">+</div>
+                </div>
+              </div>
+              <a href="/product.html" class="accent underline">Подробнее</a><button class="button">Купить</button>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 d-flex">
+            <div class="category category--large">
+              <div class="category__image"><img src="./img/category-5.png" alt=""></div>
+              <h3 class="category__title">Батончик со вкусом "ЯБЛОКО-КОРИЦА"</h3>
+              <div class="category__block">
+                <div class="category__price">390 тг.</div>
+                <div class="counter">
+                  <div class="counter__descrease">-</div>
+                  <input type="number" value="1">
+                  <div class="counter__increase">+</div>
+                </div>
+              </div>
+              <a href="/product.html" class="accent underline">Подробнее</a><button class="button">Купить</button>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 d-flex">
+            <div class="category category--large">
+              <div class="category__image"><img src="./img/category-6.png" alt=""></div>
+              <h3 class="category__title">Батончик со вкусом "КЛЮКВА-ИЗЮМ"</h3>
+              <div class="category__block">
+                <div class="category__price">390 тг.</div>
+                <div class="counter">
+                  <div class="counter__descrease">-</div>
+                  <input type="number" value="1">
+                  <div class="counter__increase">+</div>
+                </div>
+              </div>
+              <a href="/product.html" class="accent underline">Подробнее</a><button class="button">Купить</button>
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <section class="section s-offer">
-      <div class="container">
-        <div class="section-title">Мы предоставляем</div>
+        <div class="form__title form__title--large wow zoomIn">Есть вопросы? Закажите обратный звонок, и наш менеджер свяжется с Вами!</div>
 
-        <div class="s-offer__content wow fadeInUp">
-          <div class="offer">
-            <img src="./img/offer-1.png" alt="">
-            <div class="offer__title">Гибкие цены</div>
-          </div>
-          <div class="offer">
-            <img src="./img/offer-2.png" alt="">
-            <div class="offer__title">Индивидуальные скидки</div>
-          </div>
-          <div class="w-100"></div>
-          <div class="offer">
-            <img src="./img/offer-3.png" alt="">
-            <div class="offer__title">Удобные способы доставки</div>
-          </div>
-          <div class="offer">
-            <img src="./img/offer-4.png" alt="">
-            <div class="offer__title">Маркетинговое продвижение 
-                бренда по всему Казахстану</div>
-          </div>
-          <div class="offer">
-            <img src="./img/offer-5.png" alt="">
-            <div class="offer__title">Брендированные коробки 
-                для продаж</div>
-          </div>
+        <div class="form form--horizontal wow zoomIn">
+          <form action="/mail.php" method="post">
+            <div class="form__content">
+
+              <input type="hidden" name="info" value="Есть вопросы? Закажите обратный звонок, и наш менеджер свяжется с Вами!">
+
+              <div class="input-div">
+                <input type="text" class="input" name="name" placeholder="Имя">
+              </div>
+
+              <div class="input-div">
+                <input type="tel" class="input" name="phone" placeholder="Номер телефона *" required="">
+                <span class="error-message">Заполните это поле</span>
+              </div>
+
+              <button class="button ajax-submit" type="submit" id="zakazat_obratnyi_zvonok">Заказать обратный звонок</button>
+            </div>
+            <div class="form__info">*Гарантируем 100% сохранность Ваших данных</div>
+          </form>
         </div>
-      </div>
-    </section>
 
-    <section class="section s-partners">
-      <div class="container">
-        <div class="section-title">С нами уже сотрудничают:</div>
-
-        <div class="owl-carousel carousel-partners wow fadeInUp">
-          <img src="./img/partner-1.png" alt="">
-          <img src="./img/partner-2.png" alt="">
-          <img src="./img/partner-3.png" alt="">
-          <img src="./img/partner-4.png" alt="">
-          <img src="./img/partner-5.png" alt="">
-          <img src="./img/partner-6.png" alt="">
-          <img src="./img/partner-7.png" alt="">
-          <img src="./img/partner-8.png" alt="">
-        </div>
-        
         <a href="/" class="underline accent">Вернуться на главную</a>
       </div>
     </section>

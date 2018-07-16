@@ -200,7 +200,7 @@ $(document).ready(function () {
   });
 
   $(".carousel-to4ka").owlCarousel({
-    loop: true,
+    loop: false,
     dots: true,
     nav: false,
     items: 1,
@@ -211,7 +211,7 @@ $(document).ready(function () {
   });
 
   $(".carousel-naboryi").owlCarousel({
-    loop: true,
+    loop: false,
     dots: true,
     nav: false,
     smartSpeed: 500,
@@ -250,6 +250,21 @@ $(document).ready(function () {
     },
   });
 
+  $(".carousel-products").owlCarousel({
+    loop: true,
+    dots: true,
+    nav: false,
+    smartSpeed: 500,
+    margin: 10,
+    navText: ['', ''],
+    responsive: {
+      0: { items: 1, mouseDrag: false },
+      576: { items: 2, mouseDrag: true },
+      768: { items: 3, mouseDrag: true },
+      992: { items: 4 },
+      1200: { items: 5 }
+    },
+  });
 
 });
 

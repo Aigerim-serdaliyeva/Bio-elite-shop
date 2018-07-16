@@ -1,0 +1,98 @@
+
+.s-partner-main {
+  padding: 60px 0 60px;
+  margin-top: -20px;
+  background-image: url('../img/partner-back.png');
+
+  &__title {
+    font-family: $title_family;
+    font-size: 24px;
+    color: $accent;
+    letter-spacing: -1.5px;
+  }
+
+  .nabor {
+    margin: 50px 0 0 100px;
+  }
+
+  .form {
+    padding: 15px 0 25px;
+    background-color: rgba(#fff, 0.6);
+
+    &__title {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.s-partners {
+  .carousel-partners {
+    .owl-item {
+      align-items: center;
+    }
+  }
+}
+
+.s-offer {
+  background-color: #fff;
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .offer {
+    width: 205px;
+    text-align: center;
+    margin: 0 30px 30px;
+
+    &__title {
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+  .s-partner-main {
+    .nabor {
+      margin-left: 0;
+    }
+  }
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {  
+  .s-partner-main {
+    &__title {
+      font-size: 20px;
+    }
+
+    .nabor {
+      margin-top: 20px;
+      &__image {
+        margin: 0 auto;
+      }
+    }
+
+    .form {
+      margin-top: 30px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  .s-offer {
+    &__content {
+      margin-left: -5px;
+      margin-right: -5px;
+    }
+    .offer {
+      width: calc(50% - 20px);
+      margin: 0 5px 30px;
+    }
+  }
+}
