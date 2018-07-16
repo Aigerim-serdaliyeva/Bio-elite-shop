@@ -49,7 +49,7 @@
               </div>    
             </div>
 
-            <a href="#" class="accent underline" data-remodal-target="">Доставка и оплата</a>
+            <a href="#" class="accent underline" data-remodal-target="dostavka-modal">Доставка и оплата</a>
           </div>          
 
           <a href="/" class="logo">
@@ -131,7 +131,7 @@
                 из 24 штук со скидкой в 10%!</h2>
 
             <div class="nabor__price"> 8 400тг. <span>вместо <del>9360</del></span></div>
-            <a href="#" class="nabor__link accent underline">Что входит в набор?</a>
+            <a href="#" class="nabor__link accent underline" data-remodal-target="nabor-modal-1">Что входит в набор?</a>
             <button class="button">Купить</button>
 
             <div class="form form--horizontal wow fadeIn">
@@ -174,7 +174,7 @@
               <a href="/category.html">Батончики</a>
             </div>
             <div>
-              <a href="">Доставка и оплата</a>
+              <a href="#" data-remodal-target="dostavka-modal">Доставка и оплата</a>
               <a href="/#contact">Контакты</a>
               <a href="/partner.html">Сотрудничество</a>
             </div>
@@ -234,6 +234,80 @@
         <div class="form__info">*Гарантируем 100% сохранность Ваших данных</div>
       </form>
     </div>
+  </div>
+
+  <div class="remodal nabor-modal" data-remodal-id="nabor-modal-1" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <img src="./img/logo-mini.png" alt="" class="remodal__logo">
+
+    <div class="nabor nabor--large">
+      <div class="nabor__image nabor__image--mini"><img src="./img/nabor-1.png" alt=""></div>
+      <div class="nabor__content">
+        <h3 class="nabor__title">Макси-набор батончиков "Bio Elite"</h3>
+        <div class="nabor__count">Количество: 24 батончика</div>
+
+        <div class="counter">
+          <div class="counter__descrease">-</div>
+          <input type="number" value="1">
+          <div class="counter__increase">+</div>
+        </div>            
+
+        <div class="nabor__price"> 8 400тг. <span>вместо <del>9360</del></span></div>
+        <button class="button">Купить</button>
+      </div>
+    </div>
+
+    <ul class="list">
+      <li>4 фруктово-ореховых батончиков со вкусом "ИНЖИР-АРАХИС"</li>
+      <li>4 фруктово-ореховых батончиков со вкусом "ШОКОЛАД-МИНДАЛЬ"</li>
+      <li>4 фруктово-ореховых батончиков со вкусом "КЛЮКВА-ИЗЮМ"</li>
+      <li>4 фруктово-ореховых батончиков со вкусом "АПЕЛЬСИН"</li>
+      <li>4 фруктово-ореховых батончиков со вкусом "КУРАГА-АРАХИС"</li>
+      <li>4 фруктово-ореховых батончиков со вкусом "ЯБЛОКО-КОРИЦА" </li>
+    </ul>
+
+    <div class="nabor-modal__bottom">
+      <p>Собери свой набор батончиков "Bio Elite"!</p>
+      <a class="button" href="/category.html">Собрать свой набор батончиков</a>
+    </div>
+
+  </div>
+
+  <div class="remodal nabor-modal" data-remodal-id="nabor-modal-2" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <img src="./img/logo-mini.png" alt="" class="remodal__logo">
+
+    <div class="nabor nabor--large">
+      <div class="nabor__image nabor__image--mini"><img src="./img/nabor-2.png" alt=""></div>
+      <div class="nabor__content">
+        <h3 class="nabor__title">Мини-набор батончиков "Bio Elite"</h3>
+        <div class="nabor__count">Количество: 6 батончика</div>
+
+        <div class="counter">
+          <div class="counter__descrease">-</div>
+          <input type="number" value="1">
+          <div class="counter__increase">+</div>
+        </div>            
+
+        <div class="nabor__price"> 2 340тг.</div>
+        <button class="button">Купить</button>
+      </div>
+    </div>
+
+    <ul class="list">
+      <li>1 фруктово-ореховых батончиков со вкусом "ИНЖИР-АРАХИС"</li>
+      <li>1 фруктово-ореховых батончиков со вкусом "ШОКОЛАД-МИНДАЛЬ"</li>
+      <li>1 фруктово-ореховых батончиков со вкусом "КЛЮКВА-ИЗЮМ"</li>
+      <li>1 фруктово-ореховых батончиков со вкусом "АПЕЛЬСИН"</li>
+      <li>1 фруктово-ореховых батончиков со вкусом "КУРАГА-АРАХИС"</li>
+      <li>1 фруктово-ореховых батончиков со вкусом "ЯБЛОКО-КОРИЦА" </li>
+    </ul>
+
+    <div class="nabor-modal__bottom">
+      <p>Собери свой набор батончиков "Bio Elite"!</p>
+      <a class="button" href="/category.html">Собрать свой набор батончиков</a>
+    </div>
+
   </div>
 
   <script src="./js/libs.min.js"></script>
