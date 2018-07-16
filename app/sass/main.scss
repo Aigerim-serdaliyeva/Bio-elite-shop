@@ -614,6 +614,267 @@
   }
 }
 
+.modal {
+  max-width: 650px;
+  background-color: $yellow;
+  padding: 40px 25px 25px;
+
+  .remodal__title {
+    position: relative;
+    margin-bottom: 30px;
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__bottom {
+    margin-left: -25px;
+    padding-right: -25px;
+  }
+
+  &-block {
+    padding: 15px 10px;
+    background-color: $accent;
+    font-family: $title_family;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 5px;
+
+    &__title {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    &__sale {
+      font-size: 18px;
+      font-family: $print_family;
+      color: #de9191;
+    }
+
+    &__price {
+      font-size: 16px;
+      &--large {
+        font-size: 24px;
+      }
+    }    
+
+    & + .button {
+      width: 100%;
+    }
+  }
+}
+
+.label {
+  color: $accent;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.back {
+  position: relative;
+  margin-left: 20px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 9px;
+    background-image: url('../img/back.png');
+    background-repeat: no-repeat;
+  }
+}
+
+.basket-modal {
+  position: relative;
+
+  &__content {
+    padding-right: 135px;
+  }
+
+  &__block {
+    position: absolute;
+    width: 150px;
+    right: 0px;
+
+    .d-flex {
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+  }
+
+  .basket-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+    &__image {
+      @include disk(70px);
+      border: 10px solid $accent;
+      flex-shrink: 0;
+      position: relative;
+      margin-right: 10px;
+      
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &__title {
+      font-size: 14px;
+      font-weight: 600;
+      flex-grow: 1;
+    }
+
+    &__price {
+      width: 80px;
+      margin-left: 15px;
+      font-size: 18px;
+      font-weight: bold;
+      font-family: $title_family;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      cursor: pointer;
+      width: 12px;
+      height: 12px;
+      background-image: url('../img/basket-remove.png');
+      background-repeat: no-repeat;
+      margin: 3px 0 0 10px;
+    }
+  }
+}
+
+.zakaz-modal {
+  &__block {
+    position: absolute;
+    right: 0;
+    width: 235px;
+
+    .modal-block {
+      &__price {
+        margin: 0 5px 0 10px;
+      }
+
+      &__total {
+        font-size: 20px;
+        text-align: right;
+        margin: 0 40px 20px 0;
+      }
+
+      &__deliver {
+        font-size: 20px;
+        margin-left: 10px;
+      }
+    }
+
+    .button {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__content {
+    padding-right: 260px;
+  }
+
+  .tr {
+    display: flex;
+    margin-bottom: 10px;
+
+    .label {
+      width: 120px;
+      margin-top: 5px;
+    }
+
+    .input-div {
+      flex-grow: 1;
+    }
+
+    .input {
+      border-width: 1px;
+      height: 32px;
+    }
+
+    .textarea {
+      border-width: 1px;
+    }
+
+    .dropdown {
+      flex-grow: 1;
+    }
+
+    &--long {
+      align-items: center;
+
+      .label {
+        width: auto;
+        margin: 0 5px 0 0;
+      }
+
+      .input-div {
+        width: 100px;
+      }
+    }
+  }
+
+  .payments {
+    position: relative;
+    padding-bottom: 35px;
+  }
+
+  .cards {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    width: 280px;
+    margin-left: 30px;
+
+    img {
+      flex-shrink: 0;
+    }
+
+    .checkbox {
+      align-items: center;
+    }
+  }
+}
+
+.dostavka-modal {
+  padding-bottom: 0;
+
+  .remodal__title {
+    margin-bottom: 50px;
+  }
+
+  .label {
+    width: 90px;
+    flex-shrink: 0;
+  }
+
+  .modal__bottom {
+    padding: 20px;
+    background-image: url('../img/dostavka-back.jpg');
+
+    .form__title {
+      text-align: center;
+    }
+  }
+}
+
 @import './_thanks';
 @import './_sale';
 @import './_partner';

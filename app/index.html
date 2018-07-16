@@ -49,7 +49,7 @@
               </div>    
             </div>
 
-            <a href="#" class="accent underline" data-remodal-target="">Доставка и оплата</a>
+            <a href="#" class="accent underline" data-remodal-target="dostavka-modal">Доставка и оплата</a>
           </div>          
 
           <a href="/" class="logo">
@@ -108,7 +108,7 @@
                 <a class="link accent" href="/sale.html">Акции</a>
               </li>
               <li class="last d-none d-lg-block">
-                <a class="link basket" href="#">Корзина</a>
+                <a class="link basket" href="#" data-remodal-target="basket-modal">Корзина</a>
               </li>
               <li class="d-lg-none">
                 <a href="tel:+77273468799" class="text-phone" id="phone_number">+7 (727) 346 87 99</a>
@@ -132,7 +132,7 @@
 
             <div>
               <span class="s-main__bottom">Собери свой набор батончиков "Bio Elite"!</span>
-              <button class="button">Собрать свой набор батончиков</button>
+              <a class="button" href="/category.html">Собрать свой набор батончиков</a>
             </div>
           </div>
           <div class="col-xl-6">
@@ -144,7 +144,7 @@
                     из 24 штук со скидкой в 10%!</h2>
     
                 <div class="nabor__price"> 8 400тг. <span>вместо <del>9360</del></span></div>
-                <a href="#" class="nabor__link accent underline">Что входит в набор?</a>
+                <a href="#" class="nabor__link accent underline" data-remodal-target="nabor-modal-1">Что входит в набор?</a>
                 <button class="button">Купить</button>
               </div>
             </div>
@@ -245,10 +245,10 @@
     <section class="section-seperator">
       <div class="container">
         <div class="section-seperator__content">
-          <a href="#" class="underline accent">* Доставка и оплата</a>
+          <a href="#" class="underline accent" data-remodal-target="dostavka-modal">* Доставка и оплата</a>
           <div class="grow"></div>
           <p>Собери свой набор батончиков "Bio Elite"!</p>
-          <button class="button">Собрать свой набор батончиков</button>
+          <a class="button" href="/category.html">Собрать свой набор батончиков</a>
         </div>
       </div>
     </section>
@@ -544,7 +544,7 @@
           <a href="#" class="underline accent">* Цена на сайте в среднем ниже на 15%, чем в розничных точках</a>
           <div class="grow"></div>
           <p>Собери свой набор батончиков "Bio Elite"!</p>
-          <button class="button">Собрать свой набор батончиков</button>
+          <a class="button" href="/category.html">Собрать свой набор батончиков</a>
         </div>
       </div>
     </section>
@@ -612,7 +612,7 @@
               <a href="/category.html">Батончики</a>
             </div>
             <div>
-              <a href="">Доставка и оплата</a>
+              <a href="#" data-remodal-target="dostavka-modal">Доставка и оплата</a>
               <a href="#contact">Контакты</a>
               <a href="/partner.html">Сотрудничество</a>
             </div>
@@ -706,7 +706,7 @@
 
     <div class="nabor-modal__bottom">
       <p>Собери свой набор батончиков "Bio Elite"!</p>
-      <button class="button">Собрать свой набор батончиков</button>
+      <a class="button" href="/category.html">Собрать свой набор батончиков</a>
     </div>
 
   </div>
@@ -743,7 +743,7 @@
 
     <div class="nabor-modal__bottom">
       <p>Собери свой набор батончиков "Bio Elite"!</p>
-      <button class="button">Собрать свой набор батончиков</button>
+      <a class="button" href="/category.html">Собрать свой набор батончиков</a>
     </div>
 
   </div>
@@ -1055,6 +1055,251 @@
       </div>    
     </div>
 
+  </div>
+
+  <div class="remodal basket-modal modal" data-remodal-id="basket-modal" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+
+    <div class="remodal__title">
+      <img src="./img/logo-middle.png" alt=""> Мой набор батончиков "Bio Elite"
+    </div>
+
+    <div class="basket-modal__block">
+      <div class="modal-block text-center">
+        <div class="modal-block__title">Итого :</div>
+        <div class="d-flex">
+          <div class="modal-block__price">15 210 тг.</div>
+          <div class="modal-block__sale">- 10%</div>
+        </div>
+        <div class="modal-block__price--large">13 689 тг.</div>
+      </div>
+      <button class="button" data-remodal-target="zakaz-modal">Оформить</button>
+    </div>
+
+    <div class="basket-modal__content">
+      <div class="basket-item">
+        <div class="basket-item__image"><img src="./img/category-mini-1.png" alt=""></div>
+        <h4 class="basket-item__title">Батончик со вкусом <br>
+            "КУРАГА-АРАХИС"  </h4>
+          <div class="counter">
+            <div class="counter__descrease">-</div>
+            <input type="number" value="1">
+            <div class="counter__increase">+</div>
+          </div>
+        <div class="basket-item__price">1 950 тг.</div>
+      </div>
+      <div class="basket-item">
+        <div class="basket-item__image"><img src="./img/category-mini-2.png" alt=""></div>
+        <h4 class="basket-item__title">Батончик со вкусом <br>
+            "ИНЖИР-АРАХИС"</h4>
+          <div class="counter">
+            <div class="counter__descrease">-</div>
+            <input type="number" value="1">
+            <div class="counter__increase">+</div>
+          </div>
+        <div class="basket-item__price">390 тг.</div>
+      </div>
+      <div class="basket-item">
+        <div class="basket-item__image"><img src="./img/category-mini-3.png" alt=""></div>
+        <h4 class="basket-item__title">Батончик со вкусом <br>
+            "ЯБЛОКО-КОРИЦА"</h4>
+          <div class="counter">
+            <div class="counter__descrease">-</div>
+            <input type="number" value="1">
+            <div class="counter__increase">+</div>
+          </div>
+        <div class="basket-item__price">3 120 тг.</div>
+      </div>
+      <div class="basket-item">
+        <div class="basket-item__image"><img src="./img/category-mini-4.png" alt=""></div>
+        <h4 class="basket-item__title">Батончик со вкусом <br>
+            "ШОКОЛАД-МИНДАЛЬ"</h4>
+          <div class="counter">
+            <div class="counter__descrease">-</div>
+            <input type="number" value="1">
+            <div class="counter__increase">+</div>
+          </div>
+        <div class="basket-item__price">5 850 тг.</div>
+      </div>
+      <div class="basket-item">
+        <div class="basket-item__image"><img src="./img/category-mini-5.png" alt=""></div>
+        <h4 class="basket-item__title">Батончик со вкусом <br>
+            "АПЕЛЬСИН"</h4>
+          <div class="counter">
+            <div class="counter__descrease">-</div>
+            <input type="number" value="1">
+            <div class="counter__increase">+</div>
+          </div>
+        <div class="basket-item__price">1 170 тг.</div>
+      </div>
+      <div class="basket-item">
+        <div class="basket-item__image"><img src="./img/category-mini-6.png" alt=""></div>
+        <h4 class="basket-item__title">Батончик со вкусом <br>
+            "КЛЮКВА-ИЗЮМ"</h4>
+          <div class="counter">
+            <div class="counter__descrease">-</div>
+            <input type="number" value="1">
+            <div class="counter__increase">+</div>
+          </div>
+        <div class="basket-item__price">2 730 тг.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="remodal zakaz-modal modal" data-remodal-id="zakaz-modal" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+
+    <div class="remodal__title">
+      <img src="./img/logo-middle.png" alt=""> Оформление заказа
+    </div>
+
+    <div class="zakaz-modal__block">
+      <div class="modal-block">
+        <div class="modal-block__title">
+          Итого :
+          <span class="modal-block__price">15 210 тг.</span>
+          <span class="modal-block__sale">- 10%</span>
+        </div>
+        <div class="modal-block__total"> 13 689 тг.</div>
+        <div>Доставка : <span class="modal-block__deliver">0 тг.</span></div>
+      </div>
+      <button class="button" data-remodal-target="zakaz-modal">Оформить</button>
+      <a href="#" class="underline accent back" data-remodal-target="basket-modal">Редактировать заказ</a>
+    </div>
+
+    <div class="zakaz-modal__content">
+      <form action="">
+        <div class="tr">
+          <label class="label">
+            Как Вас зовут? *
+          </label>
+
+          <div class="input-div">
+            <input type="text" class="input" name="name" required>
+            <span class="error-message">Заполните это поле</span>
+          </div>      
+        </div>
+
+        <div class="tr">
+          <label class="label">
+            Телефон *
+          </label>
+
+          <div class="input-div">
+            <input type="tel" class="input" name="phone" required="">
+            <span class="error-message">Заполните это поле</span>
+          </div>
+        </div>
+
+        <div class="tr">
+          <label class="label">
+            Город *
+          </label>
+
+          <div class="dropdown dropdown--bordered">
+            <div class="dropdown-toggle" id="cityDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <input type="hidden" name="Город" value="Алматы">
+              <span>Алматы</span>
+            </div>
+            <div class="dropdown-menu" aria-labelledby="cityDropdownMenu">
+              <a class="dropdown-item" href="#">Алматы</a>
+              <a class="dropdown-item" href="#">Астана</a>
+            </div>
+          </div>      
+        </div>
+
+        <div class="tr">
+          <label class="label">Адрес доставки *</label>
+
+          <div class="input-div">
+            <textarea name="Адрес" class="textarea"></textarea>
+          </div>
+        </div>
+
+        <div class="tr">
+          <label class="label">Комментарий</label>
+
+          <div class="input-div">
+            <textarea name="Комментарий" class="textarea"></textarea>
+          </div>
+        </div>
+
+        <div class="tr">
+          <label class="label">Способ оплаты</label>
+
+          <div class="payments">
+            <label class="checkbox"><input type="radio" name="Способ_оплаты" value="Наличными курьеру"><span></span> Наличными курьеру</label>
+            <label class="checkbox"><input type="radio" name="Способ_оплаты" value="Банковской картой" checked><span></span> Банковской картой</label>
+
+            <div class="cards">
+              <label class="checkbox"><input type="radio" name="Карта" value="VISA"><span></span> <img src="./img/visa.png" alt=""></label>
+              <label class="checkbox"><input type="radio" name="Карта" value="MasterCard"><span></span> <img src="./img/mastercard.png" alt=""></label>
+              <label class="checkbox"><input type="radio" name="Карта" value="American Express"><span></span> <img src="./img/american-express.png" alt=""></label>
+            </div>
+          </div>
+        </div>
+
+        <div class="tr tr--long">
+          <label class="label">Укажите купюру, <br>
+              с которой надо подготовить сдачу</label>
+
+          <div class="input-div">
+            <input type="text" class="input" name="Купюра">
+          </div> 
+        </div>
+      </form>
+    </div>   
+  </div>
+
+  <div class="remodal dostavka-modal modal" data-remodal-id="dostavka-modal" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+
+    <div class="remodal__title">
+      <img src="./img/logo-middle.png" alt=""> Доставка и оплата
+    </div>
+
+    <div class="d-sm-flex">
+      <div class="label">Доставка</div>
+      <div>
+        <p>- Доставка осуществляется во все регионы Казахстана</p>
+        <p>- По городу Алматы доставка осуществляется курьером день в день        </p>
+        <p>- По Казахстану доставка осуществляется курьерской компанией и занимает от 1 до 7 рабочих дней в зависимости от удаленности региона        </p>
+        <p>- Минимальная сумма заказа - 2340 тг.        </p>
+        <p>- По Алматы доставка бесплатна при заказе на сумму от 2340 тг.</p>
+      </div>
+    </div>
+    <div class="d-sm-flex">
+      <div class="label">Оплата</div>
+      <div>
+          <p class="accent">Два способа оплаты:</p>
+          <p>- наличными курьеру (по городу Алматы)          </p>
+          <p>- онлайн-оплата на сайте</p>
+      </div>
+    </div>
+
+    <div class="modal__bottom">
+      <div class="form__title">Есть вопросы? Закажите обратный звонок, и наш менеджер свяжется с Вами!</div>
+
+      <div class="form form--horizontal">
+        <form action="/mail.php" method="post">
+          <div class="form__content">
+            <input type="hidden" name="info" value="Есть вопросы? Закажите обратный звонок, и наш менеджер свяжется с Вами!">
+  
+            <div class="input-div">
+              <input type="text" class="input" name="name" placeholder="Имя">
+            </div>
+  
+            <div class="input-div">
+              <input type="tel" class="input" name="phone" placeholder="Номер телефона *" required="">
+              <span class="error-message">Заполните это поле</span>
+            </div>
+  
+            <button class="button ajax-submit" type="submit" id="zakazat_obratnyi_zvonok">Заказать обратный звонок</button>
+          </div>
+          <div class="form__info">*Гарантируем 100% сохранность Ваших данных</div>
+        </form>
+      </div>    
+    </div>
   </div>
   
 

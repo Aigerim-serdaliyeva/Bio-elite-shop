@@ -271,6 +271,8 @@
     }
   }
 
+  
+
 }
 
 // ≥576px
@@ -408,7 +410,7 @@
     .remodal__title {
       text-align: center;
       font-size: 18px;
-      
+
       img {
         display: block;
         margin: 0 auto 10px;
@@ -420,6 +422,86 @@
       margin-right: -15px;
     }
   }
+
+  .modal {
+    .remodal__title {
+      font-size: 18px;
+
+      img {
+        position: static;
+        display: block;
+        margin: 0 auto 5px;
+        transform: none;
+      }
+    }
+
+    &__bottom {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+  }
+
+  .basket-modal {
+    &__block {
+      position: static;
+      margin: 0 auto 20px;
+    }
+
+    &__content {
+      padding-right: 0px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .basket-item {
+      position: relative;
+      flex-direction: column;
+      width: 50%;
+      text-align: center;
+
+      &__image {
+        margin: 0 0 5px;
+      }
+
+      &__title {
+        margin-bottom: 5px;
+      }
+
+      &__price {
+        margin: 0;
+      }
+
+      &:after {
+        position: absolute;
+        top: 0;
+        right: 10px;
+      }
+    }
+  }
+
+  .zakaz-modal {
+    &__block {
+      position: static;
+      margin: 0 auto 20px;
+    }
+
+    &__content {
+      padding-right: 0;
+    }
+
+    .cards {
+      position: static;
+      width: auto;
+      display: block;
+    }
+  }
+
+  .dostavka-modal {
+    .remodal__title {
+      margin-bottom: 30px;
+    }    
+  }
+  
 }
 
 
