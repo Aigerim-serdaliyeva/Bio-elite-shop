@@ -26,6 +26,7 @@ gulp.task('main-js', function () {
 
 gulp.task('libs-js', function () {
   return gulp.src([
+    'node_modules/vue/dist/vue.min.js',
     'node_modules/jquery/dist/jquery.min.js',
     'node_modules/remodal/dist/remodal.min.js',
     'node_modules/popper.js/dist/umd/popper.min.js',
