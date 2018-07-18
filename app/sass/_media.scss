@@ -86,8 +86,21 @@
     }
 
     &__list {
+      
       li {
         position: static;
+        color: #000;
+        display: flex;
+        margin-bottom: 8px;
+
+        &:before {
+          content: "";
+          display: inline-block;
+          @include disk(10px);
+          background-color: $accent;
+          margin: 10px 10px 0 0;
+          flex-shrink: 0;
+        }
       }
     }
   }
@@ -321,6 +334,12 @@
   .s-advantages {
     &__list {
       font-size: 16px;
+
+      li {
+        &:before {
+          margin-top: 4px;
+        }
+      }
     }
   }
 
