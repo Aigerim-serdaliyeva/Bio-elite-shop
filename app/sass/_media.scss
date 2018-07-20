@@ -196,7 +196,7 @@
 }
 
 // ≥768px
-@include media-breakpoint-down(sm) {  
+@include media-breakpoint-down(sm) {
 
   .form {
     &__title {
@@ -284,7 +284,15 @@
     }
   }
 
-  
+  .s-certificates {
+    background-image: none;
+    clip-path: none;
+    padding: 40px 0;
+  }
+
+  .s-contact {
+    margin-top: 0;
+  }
 
 }
 

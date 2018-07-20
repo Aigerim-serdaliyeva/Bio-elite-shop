@@ -413,6 +413,16 @@
   }
 }
 
+.s-certificates {
+  padding: 160px 0 230px;
+  background-image: url('../img/certificates-back.png');
+  background-color: $yellow;
+  background-size: auto;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  clip-path: polygon(0 0, 100% 27%, 100% 100%, 0 73%);
+}
+
 .s-to4ka {
   .to4ki {
     display: flex;
@@ -511,6 +521,8 @@
 }
 
 .s-contact {
+  margin-top: -100px;
+  
   .contact {
     display: flex;
     align-items: flex-start;

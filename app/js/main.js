@@ -52,7 +52,7 @@ $(document).ready(function () {
     var scrollPos = $wnd.scrollTop() + headerHeight;
 
     // добавляет клас active в ссылку меню, когда находимся на блоке, куда эта ссылка ссылается
-    $menu.find(".link").each(function () {
+    $menu.find(".link a").each(function () {
       var link = $(this);
       var id = link.attr('href');
 
@@ -72,7 +72,7 @@ $(document).ready(function () {
   onscroll();
 
   // при нажатии на меню плавно скролит к соответсвующему блоку
-  $(".main-menu .link").click(function (e) {
+  $(".main-menu .link a").click(function (e) {
     var $href = $(this).attr('href');
     if ($href.length > 1 && $href.charAt(0) == '#' && $($href).length > 0) {
       e.preventDefault();
@@ -173,7 +173,7 @@ $(document).ready(function () {
     e.preventDefault();
     var $dropdown = $(this).closest(".dropdown");
     $dropdown.find(".dropdown-toggle span").html($(this).html());
-  })
+  });
 
   $(".carousel-reviews").owlCarousel({
     loop: true,
@@ -226,12 +226,14 @@ $(document).ready(function () {
 
   $(".carousel-certificates").owlCarousel({
     loop: true,
+    dots: true,
     smartSpeed: 500,
     margin: 30,
     navText: ['', ''],
     responsive: {
-      0: { items: 1, mouseDrag: false, dots: true, nav: false },
-      576: { items: 2, mouseDrag: true, dots: false, nav: true },
+      0: { items: 1, mouseDrag: false },
+      576: { items: 2, mouseDrag: true },
+      768: { items: 3 }
     },
   });
 
