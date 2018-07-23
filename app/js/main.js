@@ -175,6 +175,35 @@ $(document).ready(function () {
     $dropdown.find(".dropdown-toggle span").html($(this).html());
   });
 
+  $(".counter__descrease, .counter__increase").click(function() {
+    var $this = $(this);
+    var $input = $this.siblings("input");
+    var count = +$input.val();
+
+    count += ($this.hasClass('counter__increase') ? 1 : -1);
+    if (count < 1) count = 1;
+    $input.val(count);
+  });
+
+  $(".product-buy").click(function() {
+    var $this = $(this);
+
+    if (!$this.hasClass("button--loading")) {
+      $this.addClass("button--loading");
+      var $product = $this.closest(".product");
+      var $quantity = $product.find(".product-quantity");
+
+      var id = $product.data('id');
+      var price = $product.find('.price').data('price');
+      var quantity = $quantity.val();
+
+      $.get('/?add-to-cart=' + id + '&quantity=' + quantity, function(data, status) {
+        $quantity.val(1);
+        $this.removeClass("button--loading");
+      });
+    }
+  });
+
   $(".carousel-reviews").owlCarousel({
     loop: true,
     dots: true,

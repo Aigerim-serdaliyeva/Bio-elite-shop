@@ -116,6 +116,18 @@
   }
 }
 
+.price {
+  font-family: $title_family;
+  font-size: 18px;
+  font-weight: bold;
+
+  span {
+    font-weight: normal;
+    font-size: 0.9em;
+    margin-left: 10px;
+  }
+}
+
 .nabor {
   display: flex;
 
@@ -154,20 +166,11 @@
     margin-bottom: 20px;
   }
 
-  &__price {
-    font-family: $title_family;
-    font-size: 18px;
-    font-weight: bold;
+  .counter {
     margin-bottom: 20px;
-
-    span {
-      font-weight: normal;
-      font-style: 16px;
-      margin-left: 10px;
-    }
   }
 
-  .counter {
+  .price {
     margin-bottom: 20px;
   }
 
@@ -269,13 +272,18 @@
   &__block {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 15px;
   }
 
-  &__price {
-    font-family: $title_family;
-    font-weight: bold;
+  .price {
     font-size: 24px;
+
+    span {
+      display: block;
+      font-size: 16px;
+      margin: 0;
+    }
   }
 
   .button {
