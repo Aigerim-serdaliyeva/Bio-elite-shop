@@ -422,16 +422,6 @@
   }
 }
 
-.s-certificates {
-  padding: 160px 0 230px;
-  background-image: url('../img/certificates-back.png');
-  background-color: $yellow;
-  background-size: auto;
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  clip-path: polygon(0 0, 100% 27%, 100% 100%, 0 73%);
-}
-
 .s-to4ka {
   .to4ki {
     display: flex;
@@ -527,6 +517,23 @@
     font-size: 24px;
     margin-bottom: 10px;
   }
+}
+
+.s-holidays {
+  .container {
+    padding: 0;
+  }
+}
+
+.s-certificates {
+  margin-top: -100px;
+  padding: 160px 0 230px;
+  background-image: url('../img/certificates-back.png');
+  background-color: $yellow;
+  background-size: auto;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  clip-path: polygon(0 0, 100% 27%, 100% 100%, 0 73%);
 }
 
 .s-contact {
