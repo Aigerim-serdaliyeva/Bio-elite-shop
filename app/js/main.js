@@ -258,6 +258,20 @@ $(document).ready(function () {
     },
   });
 
+  $(".carousel-holiday").owlCarousel({
+    loop: true,
+    dots: true,
+    nav: false,
+    smartSpeed: 500,
+    margin: 30,
+    navText: ['', ''],
+    responsive: {
+      0: { items: 1, mouseDrag: false },
+      576: { items: 2, mouseDrag: true },
+      768: { items: 3, mouseDrag: true },
+    },
+  });
+
 
   $(".carousel-certificates").owlCarousel({
     loop: true,
