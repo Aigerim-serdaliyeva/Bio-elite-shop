@@ -194,7 +194,6 @@ $(document).ready(function () {
       var $quantity = $product.find(".product-quantity");
 
       var id = $product.data('id');
-      var price = $product.find('.price').data('price');
       var quantity = $quantity.val();
 
       $.get('/?add-to-cart=' + id + '&quantity=' + quantity, function(data, status) {
@@ -202,6 +201,13 @@ $(document).ready(function () {
         $this.removeClass("button--loading");
       });
     }
+  });
+
+  $(".basket-item__remove").click(function() {
+    $.get('/?add-to-cart=' + id + '&quantity=' + quantity, function(data, status) {
+      $quantity.val(1);
+      $this.removeClass("button--loading");
+    });
   });
 
   $(".carousel-reviews").owlCarousel({
